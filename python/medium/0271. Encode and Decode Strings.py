@@ -44,10 +44,10 @@ class Solution:
         result = []
         while end_idx < len(string):
             if string[end_idx] == self.delimiter:
-                lenght = int(string[start_idx:end_idx])
-                word = string[end_idx + 1:end_idx + lenght + 1]
+                length = int(string[start_idx:end_idx])
+                word = string[end_idx + 1:end_idx + length + 1]
                 result.append(word)
-                start_idx = end_idx + lenght + 1
+                start_idx = end_idx + length + 1
                 end_idx = start_idx
             else:
                 end_idx += 1
